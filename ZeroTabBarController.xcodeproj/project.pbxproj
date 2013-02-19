@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1497AF5D16D371D9009EDDF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1497AF5C16D371D9009EDDF1 /* UIKit.framework */; };
+		1497AF5F16D371D9009EDDF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1497AF5E16D371D9009EDDF1 /* Foundation.framework */; };
+		1497AF6116D371D9009EDDF1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1497AF6016D371D9009EDDF1 /* CoreGraphics.framework */; };
+		1497AF6716D371D9009EDDF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1497AF6516D371D9009EDDF1 /* InfoPlist.strings */; };
+		1497AF6916D371D9009EDDF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1497AF6816D371D9009EDDF1 /* main.m */; };
+		1497AF6D16D371D9009EDDF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1497AF6C16D371D9009EDDF1 /* AppDelegate.m */; };
+		1497AF7016D371D9009EDDF1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1497AF6E16D371D9009EDDF1 /* MainStoryboard.storyboard */; };
+		1497AF7316D371D9009EDDF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1497AF7216D371D9009EDDF1 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1497AF5816D371D9009EDDF1 /* ZeroTabBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroTabBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1497AF5C16D371D9009EDDF1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1497AF5E16D371D9009EDDF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1497AF6016D371D9009EDDF1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1497AF6416D371D9009EDDF1 /* ZeroTabBarController-Info.plist */ = {isa = PBXFileReference; path = "ZeroTabBarController-Info.plist"; sourceTree = "<group>"; };
+		1497AF6616D371D9009EDDF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1497AF6816D371D9009EDDF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1497AF6A16D371D9009EDDF1 /* ZeroTabBarController-Prefix.pch */ = {isa = PBXFileReference; path = "ZeroTabBarController-Prefix.pch"; sourceTree = "<group>"; };
+		1497AF6B16D371D9009EDDF1 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		1497AF6C16D371D9009EDDF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1497AF6F16D371D9009EDDF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		1497AF7116D371D9009EDDF1 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		1497AF7216D371D9009EDDF1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1497AF5516D371D9009EDDF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1497AF5D16D371D9009EDDF1 /* UIKit.framework in Frameworks */,
+				1497AF5F16D371D9009EDDF1 /* Foundation.framework in Frameworks */,
+				1497AF6116D371D9009EDDF1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1497AF4D16D371D9009EDDF1 = {
+			isa = PBXGroup;
+			children = (
+				1497AF6216D371D9009EDDF1 /* ZeroTabBarController */,
+				1497AF5B16D371D9009EDDF1 /* Frameworks */,
+				1497AF5916D371D9009EDDF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1497AF5916D371D9009EDDF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1497AF5816D371D9009EDDF1 /* ZeroTabBarController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1497AF5B16D371D9009EDDF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1497AF5C16D371D9009EDDF1 /* UIKit.framework */,
+				1497AF5E16D371D9009EDDF1 /* Foundation.framework */,
+				1497AF6016D371D9009EDDF1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1497AF6216D371D9009EDDF1 /* ZeroTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				1497AF6B16D371D9009EDDF1 /* AppDelegate.h */,
+				1497AF6C16D371D9009EDDF1 /* AppDelegate.m */,
+				1497AF6E16D371D9009EDDF1 /* MainStoryboard.storyboard */,
+				1497AF7116D371D9009EDDF1 /* ViewController.h */,
+				1497AF7216D371D9009EDDF1 /* ViewController.m */,
+				1497AF6316D371D9009EDDF1 /* Supporting Files */,
+			);
+			path = ZeroTabBarController;
+			sourceTree = "<group>";
+		};
+		1497AF6316D371D9009EDDF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1497AF6416D371D9009EDDF1 /* ZeroTabBarController-Info.plist */,
+				1497AF6516D371D9009EDDF1 /* InfoPlist.strings */,
+				1497AF6816D371D9009EDDF1 /* main.m */,
+				1497AF6A16D371D9009EDDF1 /* ZeroTabBarController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1497AF5716D371D9009EDDF1 /* ZeroTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1497AF7616D371D9009EDDF1 /* Build configuration list for PBXNativeTarget "ZeroTabBarController" */;
+			buildPhases = (
+				1497AF5416D371D9009EDDF1 /* Sources */,
+				1497AF5516D371D9009EDDF1 /* Frameworks */,
+				1497AF5616D371D9009EDDF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZeroTabBarController;
+			productName = ZeroTabBarController;
+			productReference = 1497AF5816D371D9009EDDF1 /* ZeroTabBarController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1497AF4F16D371D9009EDDF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 1497AF5216D371D9009EDDF1 /* Build configuration list for PBXProject "ZeroTabBarController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1497AF4D16D371D9009EDDF1;
+			productRefGroup = 1497AF5916D371D9009EDDF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1497AF5716D371D9009EDDF1 /* ZeroTabBarController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1497AF5616D371D9009EDDF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1497AF6716D371D9009EDDF1 /* InfoPlist.strings in Resources */,
+				1497AF7016D371D9009EDDF1 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1497AF5416D371D9009EDDF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1497AF6916D371D9009EDDF1 /* main.m in Sources */,
+				1497AF6D16D371D9009EDDF1 /* AppDelegate.m in Sources */,
+				1497AF7316D371D9009EDDF1 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1497AF6516D371D9009EDDF1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1497AF6616D371D9009EDDF1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1497AF6E16D371D9009EDDF1 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1497AF6F16D371D9009EDDF1 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1497AF7416D371D9009EDDF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1497AF7516D371D9009EDDF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1497AF7716D371D9009EDDF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZeroTabBarController/ZeroTabBarController-Prefix.pch";
+				INFOPLIST_FILE = "ZeroTabBarController/ZeroTabBarController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1497AF7816D371D9009EDDF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZeroTabBarController/ZeroTabBarController-Prefix.pch";
+				INFOPLIST_FILE = "ZeroTabBarController/ZeroTabBarController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1497AF5216D371D9009EDDF1 /* Build configuration list for PBXProject "ZeroTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1497AF7416D371D9009EDDF1 /* Debug */,
+				1497AF7516D371D9009EDDF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1497AF7616D371D9009EDDF1 /* Build configuration list for PBXNativeTarget "ZeroTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1497AF7716D371D9009EDDF1 /* Debug */,
+				1497AF7816D371D9009EDDF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1497AF4F16D371D9009EDDF1 /* Project object */;
+}
