@@ -15,6 +15,17 @@
 		1497AF6D16D371D9009EDDF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1497AF6C16D371D9009EDDF1 /* AppDelegate.m */; };
 		1497AF7016D371D9009EDDF1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1497AF6E16D371D9009EDDF1 /* MainStoryboard.storyboard */; };
 		1497AF7316D371D9009EDDF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1497AF7216D371D9009EDDF1 /* ViewController.m */; };
+		1497AF7A16D37370009EDDF1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1497AF7916D37370009EDDF1 /* QuartzCore.framework */; };
+		1497AF7D16D3775B009EDDF1 /* ZeroTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1497AF7C16D3775B009EDDF1 /* ZeroTabBarController.m */; };
+		1497AF8016D3791B009EDDF1 /* ZeroTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1497AF7F16D3791B009EDDF1 /* ZeroTabBarItem.m */; };
+		1497AF8316D37926009EDDF1 /* ZeroTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1497AF8216D37926009EDDF1 /* ZeroTabBar.m */; };
+		1497AF8A16D38FFD009EDDF1 /* ZeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1497AF8916D38FFD009EDDF1 /* ZeroViewController.m */; };
+		1497AF8D16D393E5009EDDF1 /* ZeroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1497AF8C16D393E5009EDDF1 /* ZeroViewController.xib */; };
+		1497AF9116D3B3E7009EDDF1 /* ZeroTabBarItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1497AF9016D3B3E7009EDDF1 /* ZeroTabBarItem.xib */; };
+		1497AF9316D3C203009EDDF1 /* thinking.png in Resources */ = {isa = PBXBuildFile; fileRef = 1497AF9216D3C203009EDDF1 /* thinking.png */; };
+		1497AF9716D3CE5A009EDDF1 /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1497AF9516D3CE5A009EDDF1 /* sad.png */; };
+		1497AF9A16D3D054009EDDF1 /* happy.png in Resources */ = {isa = PBXBuildFile; fileRef = 1497AF9816D3D054009EDDF1 /* happy.png */; };
+		1497AF9B16D3D054009EDDF1 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 1497AF9916D3D054009EDDF1 /* heart.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +33,30 @@
 		1497AF5C16D371D9009EDDF1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1497AF5E16D371D9009EDDF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1497AF6016D371D9009EDDF1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1497AF6416D371D9009EDDF1 /* ZeroTabBarController-Info.plist */ = {isa = PBXFileReference; path = "ZeroTabBarController-Info.plist"; sourceTree = "<group>"; };
+		1497AF6416D371D9009EDDF1 /* ZeroTabBarController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZeroTabBarController-Info.plist"; sourceTree = "<group>"; };
 		1497AF6616D371D9009EDDF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1497AF6816D371D9009EDDF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1497AF6A16D371D9009EDDF1 /* ZeroTabBarController-Prefix.pch */ = {isa = PBXFileReference; path = "ZeroTabBarController-Prefix.pch"; sourceTree = "<group>"; };
-		1497AF6B16D371D9009EDDF1 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		1497AF6A16D371D9009EDDF1 /* ZeroTabBarController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZeroTabBarController-Prefix.pch"; sourceTree = "<group>"; };
+		1497AF6B16D371D9009EDDF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1497AF6C16D371D9009EDDF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1497AF6F16D371D9009EDDF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		1497AF7116D371D9009EDDF1 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		1497AF7116D371D9009EDDF1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1497AF7216D371D9009EDDF1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1497AF7916D37370009EDDF1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1497AF7B16D3775B009EDDF1 /* ZeroTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroTabBarController.h; sourceTree = "<group>"; };
+		1497AF7C16D3775B009EDDF1 /* ZeroTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeroTabBarController.m; sourceTree = "<group>"; };
+		1497AF7E16D3791B009EDDF1 /* ZeroTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroTabBarItem.h; sourceTree = "<group>"; };
+		1497AF7F16D3791B009EDDF1 /* ZeroTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeroTabBarItem.m; sourceTree = "<group>"; };
+		1497AF8116D37926009EDDF1 /* ZeroTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroTabBar.h; sourceTree = "<group>"; };
+		1497AF8216D37926009EDDF1 /* ZeroTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeroTabBar.m; sourceTree = "<group>"; };
+		1497AF8816D38FFD009EDDF1 /* ZeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroViewController.h; sourceTree = "<group>"; };
+		1497AF8916D38FFD009EDDF1 /* ZeroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeroViewController.m; sourceTree = "<group>"; };
+		1497AF8C16D393E5009EDDF1 /* ZeroViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZeroViewController.xib; sourceTree = "<group>"; };
+		1497AF9016D3B3E7009EDDF1 /* ZeroTabBarItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ZeroTabBarItem.xib; path = ../ZeroTabBarItem.xib; sourceTree = "<group>"; };
+		1497AF9216D3C203009EDDF1 /* thinking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thinking.png; sourceTree = "<group>"; };
+		1497AF9516D3CE5A009EDDF1 /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad.png; sourceTree = "<group>"; };
+		1497AF9816D3D054009EDDF1 /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy.png; sourceTree = "<group>"; };
+		1497AF9916D3D054009EDDF1 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1497AF7A16D37370009EDDF1 /* QuartzCore.framework in Frameworks */,
 				1497AF5D16D371D9009EDDF1 /* UIKit.framework in Frameworks */,
 				1497AF5F16D371D9009EDDF1 /* Foundation.framework in Frameworks */,
 				1497AF6116D371D9009EDDF1 /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +94,7 @@
 		1497AF5B16D371D9009EDDF1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1497AF7916D37370009EDDF1 /* QuartzCore.framework */,
 				1497AF5C16D371D9009EDDF1 /* UIKit.framework */,
 				1497AF5E16D371D9009EDDF1 /* Foundation.framework */,
 				1497AF6016D371D9009EDDF1 /* CoreGraphics.framework */,
@@ -80,8 +108,22 @@
 				1497AF6B16D371D9009EDDF1 /* AppDelegate.h */,
 				1497AF6C16D371D9009EDDF1 /* AppDelegate.m */,
 				1497AF6E16D371D9009EDDF1 /* MainStoryboard.storyboard */,
+				1497AF8116D37926009EDDF1 /* ZeroTabBar.h */,
+				1497AF8216D37926009EDDF1 /* ZeroTabBar.m */,
+				1497AF7E16D3791B009EDDF1 /* ZeroTabBarItem.h */,
+				1497AF9016D3B3E7009EDDF1 /* ZeroTabBarItem.xib */,
+				1497AF7F16D3791B009EDDF1 /* ZeroTabBarItem.m */,
+				1497AF7B16D3775B009EDDF1 /* ZeroTabBarController.h */,
+				1497AF7C16D3775B009EDDF1 /* ZeroTabBarController.m */,
+				1497AF8816D38FFD009EDDF1 /* ZeroViewController.h */,
+				1497AF8916D38FFD009EDDF1 /* ZeroViewController.m */,
 				1497AF7116D371D9009EDDF1 /* ViewController.h */,
 				1497AF7216D371D9009EDDF1 /* ViewController.m */,
+				1497AF8C16D393E5009EDDF1 /* ZeroViewController.xib */,
+				1497AF9816D3D054009EDDF1 /* happy.png */,
+				1497AF9916D3D054009EDDF1 /* heart.png */,
+				1497AF9516D3CE5A009EDDF1 /* sad.png */,
+				1497AF9216D3C203009EDDF1 /* thinking.png */,
 				1497AF6316D371D9009EDDF1 /* Supporting Files */,
 			);
 			path = ZeroTabBarController;
@@ -150,6 +192,12 @@
 			files = (
 				1497AF6716D371D9009EDDF1 /* InfoPlist.strings in Resources */,
 				1497AF7016D371D9009EDDF1 /* MainStoryboard.storyboard in Resources */,
+				1497AF8D16D393E5009EDDF1 /* ZeroViewController.xib in Resources */,
+				1497AF9116D3B3E7009EDDF1 /* ZeroTabBarItem.xib in Resources */,
+				1497AF9316D3C203009EDDF1 /* thinking.png in Resources */,
+				1497AF9716D3CE5A009EDDF1 /* sad.png in Resources */,
+				1497AF9A16D3D054009EDDF1 /* happy.png in Resources */,
+				1497AF9B16D3D054009EDDF1 /* heart.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +211,10 @@
 				1497AF6916D371D9009EDDF1 /* main.m in Sources */,
 				1497AF6D16D371D9009EDDF1 /* AppDelegate.m in Sources */,
 				1497AF7316D371D9009EDDF1 /* ViewController.m in Sources */,
+				1497AF7D16D3775B009EDDF1 /* ZeroTabBarController.m in Sources */,
+				1497AF8016D3791B009EDDF1 /* ZeroTabBarItem.m in Sources */,
+				1497AF8316D37926009EDDF1 /* ZeroTabBar.m in Sources */,
+				1497AF8A16D38FFD009EDDF1 /* ZeroViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +326,7 @@
 				1497AF7816D371D9009EDDF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
