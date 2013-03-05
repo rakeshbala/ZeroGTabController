@@ -15,9 +15,13 @@
 #import "ZeroViewController.h"
 #import "ZeroTabBarItem.h"
 
-@interface ZeroTabBarController ()
+@interface ZeroTabBarController (){
+    BOOL shouldSlide;
+}
 -(void)initializeTabBarAndTabBarItems;
 -(void)itemSelected:(id)sender;
+-(void)slideAnimation:(NSUInteger)previousIndex andCurrentIndex:(NSUInteger)currentIndex;
+
 @end
 
 @implementation ZeroTabBarController
@@ -76,10 +80,17 @@
     }
     int index = 0;
    
-
+    
+    
     for (ZeroViewController *zvc in self.viewControllers) {
         CGRect itemFrame = CGRectMake(itemWidth*index, 0, itemWidth, 62);
-        
+            
+        UISwipeGestureRecognizer *rightSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(rightSwipeAction:)];
+        rightSwipe.direction=UISwipeGestureRecognizerDirectionRight;
+        UISwipeGestureRecognizer *leftSwipte = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(leftSwipeAction:)];
+        rightSwipe.direction=UISwipeGestureRecognizerDirectionLeft;
+        [zvc.view addGestureRecognizer:rightSwipe];
+        [zvc.view addGestureRecognizer:leftSwipte];
         zvc.zeroTabBarItem.layer.borderWidth = 1.50f;
         zvc.zeroTabBarItem.tag = index;
         [zvc.zeroTabBarItem addTarget:self action:@selector(itemSelected:) forControlEvents:UIControlEventTouchUpInside];
@@ -88,6 +99,10 @@
         
         index++;
     }
+    NSLog(@"%@",self.view.subviews);
+    //set blue shadow for initial;
+    [[self.viewControllers objectAtIndex:self.selectedIndex] zeroTabBarItem ].imgView.layer.shadowColor=[UIColor blueColor].CGColor;
+
     
 }
          
@@ -100,8 +115,43 @@
     
     
 }
--(void)awakeFromNib{
-    
+
+-(void)setSlideWithContinuosBackgroundImage:(UIImage *)background{
+    NSInteger index=0;
+
+    for (ZeroViewController *zvc in self.viewControllers) {
+        CGFloat xPos=(-index)*zvc.view.frame.size.width;
+        CGFloat yPos=0;
+        CGFloat imWidth = zvc.view.frame.size.width*self.viewControllers.count;
+        CGFloat imHeight = zvc.view.frame.size.height;
+        UIImageView *bgImageVw = [[UIImageView alloc]initWithImage:background];
+        bgImageVw.frame = CGRectMake(xPos, yPos, imWidth, imHeight);
+        [zvc.view insertSubview:bgImageVw atIndex:0];
+        index++;
+    }
+    shouldSlide=YES;
+}
+
+
+
+
+
+
+-(void)leftSwipeAction:(id)sender{
+    NSInteger newIndex = self.selectedIndex+1;
+    if (newIndex>self.viewControllers.count-1) {
+        newIndex=self.viewControllers.count-1;
+    }
+    [self setSelectedIndex:newIndex];
+}
+
+-(void)rightSwipeAction:(id)sender{
+    NSInteger newIndex = self.selectedIndex-1;
+    if (newIndex<0) {
+        newIndex=0;
+    }
+    [self setSelectedIndex:newIndex];
+
 }
 
 
@@ -110,13 +160,14 @@
 }
 -(void)setSelectedIndex:(NSUInteger)selectedInd{
     NSUInteger previousIndex = _selectedIndex;
-    [self.zeroTabBar removeFromSuperview];
+//    [self.zeroTabBar removeFromSuperview];
 
     if (previousIndex!=selectedInd) {
         [self animateIcons:previousIndex andCurrentIndex:selectedInd];
-        
-      
-       
+        if (shouldSlide) {
+            [self slideAnimation:previousIndex andCurrentIndex:selectedInd];
+            return;
+        }
     }
     _selectedIndex = selectedInd;
 
@@ -128,6 +179,44 @@
     [self.delegate tabBarDidSelect:self controller:selectedViewCon];
   
 
+    
+}
+
+
+-(void)slideAnimation:(NSUInteger)previousIndex andCurrentIndex:(NSUInteger)currentIndex{
+    
+    
+    ZeroViewController *previousVC = [self.viewControllers objectAtIndex:previousIndex];
+    ZeroViewController *currentVC = [self.viewControllers objectAtIndex:currentIndex];
+    CGFloat viewWidth =previousVC.view.frame.size.width;
+    int mult = previousIndex-currentIndex;
+    __block CGFloat xTrans = mult*viewWidth;
+    
+    previousVC.view.userInteractionEnabled = NO;
+    [UIView animateWithDuration:.2 animations:^{
+        
+        for (UIView *vw in previousVC.view.subviews) {
+            if (vw==self.zeroTabBar) {
+                continue;
+            }
+            vw.frame = CGRectApplyAffineTransform(vw.frame, CGAffineTransformMakeTranslation(xTrans, 0));
+        }
+        
+    } completion:^(BOOL finished) {
+        _selectedIndex = currentIndex;
+        [self.zeroTabBar removeFromSuperview];
+        [[self.view.subviews objectAtIndex:0]removeFromSuperview];
+        [self.view addSubview:currentVC.view];
+        [self.view addSubview:self.zeroTabBar];
+        [self.delegate tabBarDidSelect:self controller:currentVC];
+        previousVC.view.userInteractionEnabled = YES;
+        for (UIView *vw in previousVC.view.subviews) {
+            if (vw==self.zeroTabBar) {
+                continue;
+            }
+            vw.frame = CGRectApplyAffineTransform(vw.frame, CGAffineTransformMakeTranslation(-xTrans, 0));
+        }
+    }];
     
 }
 

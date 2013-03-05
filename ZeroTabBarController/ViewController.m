@@ -80,10 +80,10 @@
     zVCon3.zeroTabBarItem.image=[UIImage imageNamed:@"happy.png"];
     zVCon2.zeroTabBarItem.image=[UIImage imageNamed:@"heart.png"];
     zVCon1.zeroTabBarItem.image=[UIImage imageNamed:@"sad.png"];
-
+    
     NSArray *arr = [[NSArray alloc] initWithObjects:zVCon1,zVCon2,zVCon3, nil];
     ZeroTabBarController *zeroTabCon = [[ZeroTabBarController alloc] initWithTabBarItems:arr];
-    
+    [zeroTabCon setSlideWithContinuosBackgroundImage:[UIImage imageNamed:@"Beach.jpg"]];
     [self presentModalViewController:zeroTabCon animated:YES];
 }
 @end

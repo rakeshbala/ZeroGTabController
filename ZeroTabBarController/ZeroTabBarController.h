@@ -30,5 +30,8 @@
 
 -(id)initWithTabBarItems:(NSArray *)viewCons;
 -(void)animateIcons:(NSUInteger)previousIndex andCurrentIndex:(NSUInteger)currentIndex;
+-(void)rightSwipeAction:(id)sender;
+-(void)leftSwipeAction:(id)sender;
+-(void)setSlideWithContinuosBackgroundImage:(UIImage *)background;
 
 @end

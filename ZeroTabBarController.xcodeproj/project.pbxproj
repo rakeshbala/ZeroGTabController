@@ -26,6 +26,7 @@
 		1497AF9716D3CE5A009EDDF1 /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1497AF9516D3CE5A009EDDF1 /* sad.png */; };
 		1497AF9A16D3D054009EDDF1 /* happy.png in Resources */ = {isa = PBXBuildFile; fileRef = 1497AF9816D3D054009EDDF1 /* happy.png */; };
 		1497AF9B16D3D054009EDDF1 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 1497AF9916D3D054009EDDF1 /* heart.png */; };
+		14B1369516E60D7000465652 /* Beach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14B1369416E60D7000465652 /* Beach.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		1497AF9516D3CE5A009EDDF1 /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad.png; sourceTree = "<group>"; };
 		1497AF9816D3D054009EDDF1 /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy.png; sourceTree = "<group>"; };
 		1497AF9916D3D054009EDDF1 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		14B1369416E60D7000465652 /* Beach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Beach.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				1497AF7116D371D9009EDDF1 /* ViewController.h */,
 				1497AF7216D371D9009EDDF1 /* ViewController.m */,
 				1497AF8C16D393E5009EDDF1 /* ZeroViewController.xib */,
+				14B1369416E60D7000465652 /* Beach.jpg */,
 				1497AF9816D3D054009EDDF1 /* happy.png */,
 				1497AF9916D3D054009EDDF1 /* heart.png */,
 				1497AF9516D3CE5A009EDDF1 /* sad.png */,
@@ -198,6 +201,7 @@
 				1497AF9716D3CE5A009EDDF1 /* sad.png in Resources */,
 				1497AF9A16D3D054009EDDF1 /* happy.png in Resources */,
 				1497AF9B16D3D054009EDDF1 /* heart.png in Resources */,
+				14B1369516E60D7000465652 /* Beach.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
