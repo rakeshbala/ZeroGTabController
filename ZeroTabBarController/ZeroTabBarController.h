@@ -20,6 +20,7 @@
     NSUInteger _selectedIndex;
     NSArray *_viewControllers;
     ZeroTabBar *_zeroTabBar;
+    UIView *_containerView;
     
 }
 @property (weak,nonatomic) IBOutlet id<ZeroTabBarDelegate> delegate;
@@ -29,6 +30,5 @@
 
 -(id)initWithTabBarItems:(NSArray *)viewCons;
 -(void)animateIcons:(NSUInteger)previousIndex andCurrentIndex:(NSUInteger)currentIndex;
-
 
 @end

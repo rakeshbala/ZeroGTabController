@@ -43,12 +43,15 @@
     if (self) {
         [self setDelegate:self];
         NSMutableArray *tempViewCons = [NSMutableArray array];
+        _containerView=[[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 460)];
         for (UIViewController *viewCon in viewCons) {
             
-            self.view = viewCon.view;
             [tempViewCons addObject:viewCon];
         }
+        
         self.viewControllers = tempViewCons;
+        self.view=_containerView;
+        [_containerView addSubview:[[self.viewControllers objectAtIndex:0] view]];
          self.selectedIndex = 0;
         [self initializeTabBarAndTabBarItems];
     }
@@ -83,7 +86,6 @@
         zvc.zeroTabBarItem.frame = itemFrame;
         [self.zeroTabBar addSubview:zvc.zeroTabBarItem];
         
-         NSLog(@"%@",zvc.zeroTabBarItem);
         index++;
     }
     
@@ -98,22 +100,34 @@
     
     
 }
+-(void)awakeFromNib{
+    
+}
+
 
 -(NSUInteger)selectedIndex{
     return _selectedIndex;
 }
 -(void)setSelectedIndex:(NSUInteger)selectedInd{
     NSUInteger previousIndex = _selectedIndex;
+    [self.zeroTabBar removeFromSuperview];
+
     if (previousIndex!=selectedInd) {
         [self animateIcons:previousIndex andCurrentIndex:selectedInd];
+        
+      
+       
     }
-    
-    ZeroViewController *selectedViewCon = [self.viewControllers objectAtIndex:selectedInd];
     _selectedIndex = selectedInd;
+
+    ZeroViewController *selectedViewCon = [self.viewControllers objectAtIndex:_selectedIndex];
     [self.zeroTabBar removeFromSuperview];
-    self.view = selectedViewCon.view;
+    [[self.view.subviews objectAtIndex:0]removeFromSuperview];
+    [self.view addSubview:selectedViewCon.view];
     [self.view addSubview:self.zeroTabBar];
     [self.delegate tabBarDidSelect:self controller:selectedViewCon];
+  
+
     
 }
 
@@ -159,10 +173,17 @@
             tempFrame2.origin.y = tempFrame.origin.y-ydiff;
             currentVC.zeroTabBarItem.imgView.frame=tempFrame2;
         } completion:^(BOOL finished) {
-            
+          
+
         }];
     }];
 }
+
+
+
+
+
+
 - (void)didReceiveMemoryWarning
 {
     // Releases the view if it doesn't have a superview.

@@ -49,7 +49,7 @@
 {
     [super viewDidLoad];
     [self.dummyLabelForTEst setText:[NSString stringWithFormat:@"%ld",arc4random()]];
-//    self.view.backgroundColor = [UIColor colorWithWhite:1 -(arc4random() % 3)/10.0f alpha:(arc4random()%10)/10.0f];
+    self.view.backgroundColor = [UIColor colorWithRed:(arc4random() % 10)/10.0f  green:(arc4random() % 10)/10.0f blue:(arc4random() % 10)/10.0f alpha:1.0];
 
 }
 
