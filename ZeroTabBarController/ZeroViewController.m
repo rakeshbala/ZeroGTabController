@@ -48,7 +48,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.dummyLabelForTEst setText:[NSString stringWithFormat:@"%ld",arc4random()]];
+    [self.dummyLabelForTEst setText:[NSString stringWithFormat:@"%d",arc4random()]];
     self.view.backgroundColor = [UIColor colorWithRed:(arc4random() % 10)/10.0f  green:(arc4random() % 10)/10.0f blue:(arc4random() % 10)/10.0f alpha:1.0];
 
 }
